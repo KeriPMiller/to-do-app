@@ -11,8 +11,7 @@
   <!-- bootstrap CND -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/
-  3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHA
-  HRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  3.3.7/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="toDoStyle.css">
 </head>
@@ -20,11 +19,11 @@
 <body>
   <div id="header">
     <h1>To-Do</h1>
-    <input type="text" id="taskInput" placeholder="Task to do..." ><button type="button" onclick="newTask()" id="submit"><i class="fa fa-plus" aria-hidden="true"></i>Submit</button>
+    <input type="text" id="taskInput" placeholder="Task to do..." ><button type="button" onclick="newTask()" id="addBtn"><i class="fa fa-plus" aria-hidden="true"></i>+</button>
   </div>
 
   <ul id="toDoList">
-    <li>Study Javascript</li>
+    <li>Study Javascript <span>X</span></li>
     <li class="done">Play with Tillie</li>
     <li> Call Jamie back </li>
     <li> Work on "To Do" </li>

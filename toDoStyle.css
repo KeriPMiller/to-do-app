@@ -1,43 +1,69 @@
 html {
   margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body {
-  background-color: rgb(144, 100, 175);
+  background-color: rgb(230, 176, 16);
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background: rgb(36, 35, 105);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  float: left;
+
 }
 
 input {
+  padding-left: 40%;
   border: none;
   width: 75%;
   padding: 10px;
-  float: left;
   font-size: 16px;
 }
 
 ul {
  list-style-type: none;
+ float: left;
+ width: 90%;
+ padding: 10px;
 }
 
 ul li {
   cursor: pointer;
   position: relative;
   padding: 12px 8px 12px 40px;
-  background: rgb(203, 152, 205);
+  background: rgb(224, 210, 197);
+  color: rgb(73, 62, 59);
   font-size: 18px;
   font-family: monospace;
 }
 
 ul li:nth-child(odd) {
-  background: rgb(119, 195, 149);
+  background: rgb(73, 62, 59);
+  color: rgb(224, 210, 197);
 }
 
 ul li:hover {
   font-size: 175%;
-  color: rgb(49, 50, 37);
+  color: rgb(34, 195, 25);
 }
 
 ul li.done {
   text-decoration: line-through;
   color: rgb(89, 90, 93);
   background-color: rgb(134, 133, 144)
+}
+
+#addBtn {
+  background-color: rgb(198, 57, 13);
+  border-radius: 90px;
+  height: 30px;
+  font-size: 18px;
 }
