@@ -56,9 +56,7 @@ addBtn.onclick = newTask;
 
 // var li = getElementsByTagName("li");
 
-// change class to done??
-
-//adds toggle function to all exsisting lis not new ones...
+// change class to done??.
 
   var list = document.querySelector("ul");
   list.addEventListener( 'click', function(event) {
@@ -68,6 +66,8 @@ addBtn.onclick = newTask;
   })
 
 /*
+//adds toggle function to all exsisting lis not new ones..
+
 var listItems = document.querySelectorAll("li");
 
 for( var i = 0; i < listItems.length; i++ ) {
