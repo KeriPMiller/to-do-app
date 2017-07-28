@@ -58,6 +58,27 @@ addBtn.onclick = newTask;
 
 // change class to done??
 
+//adds toggle function to all exsisting lis not new ones...
+
+  var list = document.querySelector("ul");
+  list.addEventListener( 'click', function(event) {
+    if ( event.target.tagName === "LI" ) {
+      event.target.classList.toggle("done");
+    }
+  })
+
+/*
+var listItems = document.querySelectorAll("li");
+
+for( var i = 0; i < listItems.length; i++ ) {
+  listItems[i].addEventListener('click', function(event) {
+    this.classList.toggle("done");
+  });
+}
+
+//this only has the first element toggle
+
+
 var li = document.querySelector("li");
 var classes = li.classList;
 li.onclick = function() {
@@ -68,3 +89,4 @@ li.onclick = function() {
     console.log("done removed");
   }
 }
+*/
