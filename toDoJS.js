@@ -11,4 +11,5 @@ function newTask() {
   } else {
     document.getElementById("toDoList").appendChild(li);
   }
+  document.getElementById("taskInput").value = '';
 }
