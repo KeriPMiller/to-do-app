@@ -37,7 +37,7 @@ function newTask() {
   }
   document.getElementById("taskInput").value = '';
   var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\ \u00D7");
+  var txt = document.createTextNode("\ X");
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
@@ -54,12 +54,17 @@ function newTask() {
 var addBtn = document.getElementById("addBtn");
 addBtn.onclick = newTask;
 
-var li = getElementsByTagName("li");
+// var li = getElementsByTagName("li");
 
-// change class to done
-var listItems = document.querySelectorAll('li');
-for(var i = 0; i < listItems.length; i++){
-    listItems[i].addEventListener('click', function(event) {
-      this.classList.toggle('done');
-    });
+// change class to done??
+
+var li = document.querySelector("li");
+var classes = li.classList;
+li.onclick = function() {
+  var result = classes.toggle("done");
+  if(result) {
+    console.log("done added");
+  } else {
+    console.log("done removed");
+  }
 }
