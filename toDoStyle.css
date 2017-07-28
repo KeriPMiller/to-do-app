@@ -63,7 +63,7 @@ ul li.done {
 
 #addBtn {
   background-color: rgb(198, 57, 13);
-  border-radius: 90px;
-  height: 30px;
-  font-size: 18px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
 }
